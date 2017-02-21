@@ -3,7 +3,6 @@
 // Replace this with your own email address
 $siteOwnersEmail = 'tlevent02@gmail.com';
 
-
 if($_POST) {
 
    $name = trim(stripslashes($_POST['contactName']));
@@ -28,11 +27,11 @@ if($_POST) {
 
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
+   	$message .= "Email from: " . $name . "<br />";
 	$message .= "Email address: " . $email . "<br />";
-   $message .= "Message: <br />";
-   $message .= $contact_message;
-   $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+   	$message .= "Message: <br />";
+   	$message .= $contact_message;
+   	$message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
